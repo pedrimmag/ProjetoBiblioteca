@@ -36,6 +36,7 @@ namespace Biblioteca.Models
             {
                 return bc.Emprestimos.Include(e => e.Livro).ToList();
             }
+            
         }
 
         public Emprestimo ObterPorId(int id)
